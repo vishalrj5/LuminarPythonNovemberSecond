@@ -11,9 +11,11 @@ for lines in f:
 print(dict)
 
 #find highest frequency word
-num=1
+lst=[]
 for k,v in dict.items():
-    if(v>num):
-        num+=1
-        s=k
-print("\n","'",s,"'","is the word with a count of",num)
+    lst.append(v)
+high=max(lst)
+
+for k,v in dict.items():
+    if(v==high):
+        print("\n","'",k,"'","is the word with a count of",v)
