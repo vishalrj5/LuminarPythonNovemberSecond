@@ -12,6 +12,7 @@ lst=[]
 for k,v in dict.items():
     lst.append((v,k))
 print(sorted(lst,reverse=True))
+#print(dict)
 
 #high=max(dict,key=dict.get)
 #print("\n",high,"scored high")
