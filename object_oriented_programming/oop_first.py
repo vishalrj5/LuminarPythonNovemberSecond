@@ -5,6 +5,7 @@
 
 
 class person:
+    def __init__(self):
     def set_person(self,name,age,gender):
         #person has name
         self.name=name
@@ -20,6 +21,13 @@ class person:
 
 #creating object
 #referencename=classname()
+
+
+#constructor()
+#the duty of constructor is initializing instance variables
+
+#constructor name always() __init__()
+#constructor invoked automatically at the time of object creation
 obj=person()#created an object
 obj.set_person("Ajay",25,"Male")
 obj.print_person()
