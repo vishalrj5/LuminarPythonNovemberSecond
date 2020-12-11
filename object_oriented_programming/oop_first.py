@@ -5,6 +5,14 @@
 
 
 class person:
+    company_name="Luminar Technolab"
+
+    @classmethod
+    def print_company_name(cls):
+        print(person.company_name)
+    @staticmethod
+    def util():
+        print("inside util function")
     def __init__(self):
     def set_person(self,name,age,gender):
         #person has name
