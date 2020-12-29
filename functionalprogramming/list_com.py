@@ -15,3 +15,19 @@ print(squares)
 #num>5 num+1
 data=[i-1 if i<5 else i+1 for i in first]
 print(data)
+
+
+lst=[1,2,3,4,5,6,7,8,5,0]
+#return n-1 if n<5 n+1 if n>5 return 5 if n==5
+
+data=[i+1 if i>5 else i-1 if i<5 and i!=0 else 0 if i==0 else i for i in lst
+    ]
+print("out",data)
+
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+#1,2,3,4,5,6,7,8,9
+#flatten operation
+
+flat=[j for i in matrix for j in i]
+print(flat)
+
