@@ -6,7 +6,7 @@ mails=set()
 for id in f:
     mails.add(id.rstrip("\n"))
 print(mails)
-rule="[a-z0-9]{1,20}@gmail.com"
+rule="[a-z0-9A-Z-_.]{6,30}@gmail.com"
 for mail in mails:
     matcher=fullmatch(rule,mail)
     if matcher != None:
