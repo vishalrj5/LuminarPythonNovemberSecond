@@ -1,0 +1,35 @@
+sql>show databases;
+lists all databases
+
+sql>create database cms;
+
+sql>use cms;
+
+>show tables;
+\
+>students(rol,name,course,age)
+sql>create table students(rol varchar(10),name varchar(10),course varchar(20),age int);
+sql>desc students;
+
+Keys>primary key,foreign key
+
+sql>insert into students(rol,name,course,age)values('100','ajay','mca',25)
+
+sql>select * from students;
+
+sql>select name from students;
+
+
+sql>select name from students where course='mca';
+>100 rol
+>update ajays age as 26
+>update students set age=26 where rol='100';
+
+sql>delete from students where rol='103';
+
+
+>BillingSystem
+
+>bill(slno,itemname,unitprice,qty,billno,cust_id,
+
+>marks (id, rol, total)
