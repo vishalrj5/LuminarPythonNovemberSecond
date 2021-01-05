@@ -33,3 +33,17 @@ sql>delete from students where rol='103';
 >bill(slno,itemname,unitprice,qty,billno,cust_id,
 
 >marks (id, rol, total)
+
+*******************************
+LOAD DATA LOCAL INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\movies.csv'
+INTO TABLE movies
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+#Find highest rating from this movie dataset
+#find number of movies with highest rating
+#list movie names sorted by descending order of rating
+#count the number of movies released per year
+*******************************
