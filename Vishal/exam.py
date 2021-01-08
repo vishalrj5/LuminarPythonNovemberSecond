@@ -46,15 +46,19 @@ a="Term"
 root.geometry("500x500")
 root.title("Vishal Examinations")
 e=Entry(root,width=50,bg="yellow",borderwidth=8)
+e2=Entry(root,width=50,bg="green",borderwidth=8)
+e2.pack()
 e.pack()
+e2.insert(0,"Enter a Data Value")
 e.insert(0,"odd or even")
 myLabel = Label(root,text="\n- - - - Data Values Are - - - -\n \nSemester\nslot\ncourse\nTerm\n")
 def myClick():
-    myLabel= Label(root,text="Done man, Congrats")
-    myLabel.pack()
+    print("Done man, Congrats")
+
 
 b=StringVar()
 b_entry=Entry(textvariable = b)
+b_entry.pack()
 
 myButton = Button(root,text="Exam",command=myClick)
 myButton.config(command=lambda:Seme(a,b))
