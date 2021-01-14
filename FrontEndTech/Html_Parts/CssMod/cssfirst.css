@@ -1,0 +1,32 @@
+
+/*
+tagname or id or class{
+    property1:value1;
+    property2:value2;
+    }
+*/
+body{
+    background-color: rgb(12, 190, 10)
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+
+/*id selector is #*/
+
+#ind{
+    background-color: #6b79e3
+}
+
+#inli{
+    color: aliceblue
+}
+
+#qwe{
+    color: red
+}
+
+#qwee{
+    color: yellow
+}
