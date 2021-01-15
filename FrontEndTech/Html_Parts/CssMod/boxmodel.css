@@ -1,0 +1,20 @@
+#top{
+    border-style: solid;
+    border-color: cadetblue;
+    background-color: blueviolet;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 10px;
+    /*padding-left: 10%*/
+    text-align: center;
+}
+
+#bottom{
+    border-style: solid:
+    border-color: cadetblue;
+    background-color: blueviolet;
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 35%;
+    text-align: center;
+}

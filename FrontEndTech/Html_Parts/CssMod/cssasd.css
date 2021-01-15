@@ -1,0 +1,13 @@
+.one{
+color: blueviolet;
+}
+#second{
+    color: cadetblue;
+}
+#third{
+    color: cadetblue;
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+
+}
