@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <style>
+        .center{
+            text-align: center;
+            margin-top: 15%;
+            background-color: cyan;
+            margin-left: 35%;
+            margin-right: 35%;
+            color: rgb(0, 0, 0);
+            font-size: large;
+            font-family: 'Potta One', cursive;
+        }
+    </style>
+    
+    <script src="bank.js"></script>
+</head>
+<body style="background-color: crimson;">
+    <nav style="background-color: rgb(102, 102, 226); color: cornsilk;">
+        <h2>VR EN Bank</h2>
+    </nav>
+
+    <form class="center">
+        <div>
+            <label for="exampleDropdownFormEmail2" >Email address</label>
+            <input id="uname" type="text" placeholder="Username">&nbsp;&nbsp;&nbsp;
+            <br>
+        </div>
+        <div>
+            <label for="exampleDropdownFormPassword2">Password</label>
+            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="pwd" type="password" placeholder="Password">
+            <br>
+        </div>
+        <div>
+            <div>
+                <input type="checkbox">
+                <label>
+                    Remember me
+                </label>
+                <br>
+            </div>
+
+        </div>
+        <button type="reset" onclick="Bank.login()">Sign in</button>
+    </form>
+
+</body>
+
+</html>

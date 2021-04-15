@@ -19,3 +19,11 @@ sql="SELECT VERSION()"
 cursor.execute(sql)
 data=cursor.fetchone()
 print(data)
+
+f=open("employee")
+for line in f:
+    data=line.rstrip("\n").split(",")
+    sql="insert into employee(eid,ename,desig,salary)values(%s,%s,%s,%s)"
+    cursor.execute(sql,tuple(data))
+    db.commit()
+db.close()

@@ -1,0 +1,111 @@
+
+
+
+body{
+    background: linear-gradient(to right,rgba(114, 210, 235, 0.75),rgba(40, 205, 255, 0.3));
+    perspective: 1500px;
+}
+
+.container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 500 100; */
+
+
+    /* background: linear-gradient(to right,rgba(225,225,225,.8),rgba(225,225,224,.3));; */
+}
+
+.box{
+    transition: 1s ease;
+    transform-style: preserve-3d;
+    background: linear-gradient(to right,rgba(255, 77, 77, 0.8),rgba(238, 238, 83, 0.2));;
+    margin-top: 10%;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:80vh;
+    width:40rem;
+    height:40rem;
+    border-style: none;
+    border-radius: 25px;
+    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.767);
+    scrollbar-darkshadow-color: black;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+}
+.box:hover{
+    opacity: .7;
+}
+
+h1{
+    perspective: 50px;
+    transition:all 0.75s ease-out;
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgb(0, 0, 0);
+    
+    transition: all 0.75s ease-out;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 2%;
+    border: rgba(255, 77, 77, 0.8);
+}
+.circle1{
+    transition: 1s ease;
+
+    top: 5%;
+    right:.2%;
+    background: linear-gradient(to right, rgba(39, 118, 221, 0.3),rgba(255,255,255,.1));
+    border-style: none;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: .5;
+}
+.circle2{
+    
+    transition: 0.8s ease;
+    bottom: .5%;
+    left:.2%;
+    background: linear-gradient(to right, rgba(39, 118, 221, 0.3),rgba(255,255,255,.1));
+    border-style: none;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: .5;
+}
+.circle3{
+    transition: 0.5s ease;
+
+    top: 3%;
+    left:.1%;
+    background: linear-gradient(to left
+    , rgba(39, 118, 221, 0.5),rgba(255,255,255,.3));
+    border-style: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: .5;
+}
+.circle4{
+    transition: 0.8s ease;
+
+    top: 8%;
+    left:20%;
+    background: linear-gradient(to right, rgba(39, 118, 221, 0.3),rgba(255,255,255,.1));
+    border-style: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: .5;
+}

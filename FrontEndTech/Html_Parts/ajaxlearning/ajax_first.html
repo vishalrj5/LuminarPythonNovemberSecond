@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+</head>
+
+<body>
+    <h1>Ajax</h1>
+    <button onclick="snd()">Send</button>
+</body>
+<script>
+
+    var request = new XMLHttpRequest()
+    // localhost 8000:/book/create
+    request.open('post', 'https://jsonplaceholder.typicode.com/posts')
+    
+    var obj={
+
+        title: 'foo',
+        body: 'hoo',
+        userID: 1,
+
+}
+function snd(){
+    request.send(obj) //ready state change from 1 to 4 ( 4 menas task completed)
+}
+    request.onreadystatechange = () => {
+        if (request.readyState == 4) {
+            if ((request.status > 199) & (request.status < 300)) {
+                alert(request.response)
+                var data = JSON.parse(request.responseText)
+                console.log(data)
+                     
+                 
+                 
+                 
+             }
+            else {
+                alert("failed")
+            }
+        }
+    }
+
+</script>
+
+</html>
+
+

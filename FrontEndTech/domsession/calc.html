@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background-color: cyan;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="cal.js"></script>
+    <h3 style="text-align: center;">Calculator</h3>
+</head>
+<!-- CSS only -->
+<style>
+    button {
+
+        transition-duration: 0.4s;
+        color: rgb(255, 255, 255);
+        background-color: rgb(39, 129, 39);
+        padding: 20px 30px;
+        letter-spacing: normal;
+
+    }
+
+    #inputs {
+        width: 200px;
+    }
+    .tabb{
+        margin-left: 35%;
+    }
+    .container{
+        background-color: brown;
+    }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+<body>
+
+    <div class="container">
+
+        
+
+
+        <table class="tabb" style="background-color: green;">
+            <tr>
+                <th><input id="inputs" name="display" type="text" style="border-style: groove;"></th>
+            </tr>
+            <tr>
+                <div>
+                    <td><button value="!" onclick="clearBox()">!</button></td>
+                    <td><button value="c" onclick="clearBox()">C</button></td>
+                    <td><button>a </button></td>
+                    <td> <button value="/" onclick="displayBox('/')">/</button></td>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    <td> <button value="7" onclick="displayBox('7')">7</button></td>
+                    <td> <button value="8" onclick="displayBox('8')">8</button></td>
+                    <td> <button value="9" onclick="displayBox('9')">9</button></td>
+                    <td> <button value="*" onclick="displayBox('*')">X</button></td>
+                </div>
+            </tr>
+            <br>
+            <tr>
+
+
+                <div>
+                    <td> <button value="4" onclick="displayBox('4')">4</button></td>
+                    <td> <button value="5" onclick="displayBox('5')">5</button></td>
+                    <td> <button value="6" onclick="displayBox('6')">6</button></td>
+                    <td> <button value="-" onclick="displayBox('-')">-</button></td>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    <td> <button value="1" onclick="displayBox('1')">1</button></td>
+                    <td> <button value="2" onclick="displayBox('2')">2</button></td>
+                    <td> <button value="3" onclick="displayBox('3')">3</button></td>
+                    <td> <button value="+" onclick="displayBox('+')">+</button></td>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    <td> <button>`</button></td>
+
+                    <td> <button value="0" onclick="displayBox('0')">0</button></td>
+                    <td> <button value="." onclick="displayBox('.')">.</button></td>
+                    <td> <button value="=" onclick="calculate()">=</button></td>
+                </div>
+            </tr>
+    </div>
+
+</body>
+
+
+</html>
+
+
+<!--Login Page
+
+    Page 1
+UserName
+
+Password
+
+login button
+
+
+
+
+Hom page
+username
+accountnumber
+pin
+amount
+withdraw deposit-->

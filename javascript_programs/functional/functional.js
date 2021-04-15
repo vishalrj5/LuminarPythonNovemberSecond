@@ -18,3 +18,6 @@ for(let num of arr){//external
 //rtos
 //real operating system
 //c
+
+var total=arr.reduce((o1,o2)=>o1+o2)
+console.log(total)

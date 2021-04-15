@@ -1,0 +1,12 @@
+book create
+
+url:book/create
+get: return all book objects
+post: create a new book
+{
+    name:"test",
+    author:"test1",
+    price:150
+}
+
+========
